@@ -1,5 +1,5 @@
 #include "lib.h"
-bool nprimo(int x, int y){
+bool numeroprimo(int x, int y){
     if(x % y == 0){
         if(x == y){
             return true;
@@ -8,5 +8,5 @@ bool nprimo(int x, int y){
             return false;
         }
     }
-    nprimo(x, y + 1);
+    numeroprimo(x, y + 1);
 }
